@@ -1,4 +1,5 @@
 .profile-img {
+  min-width: min(max(20vw, 100px), 150px);
   width: min(max(20vw, 100px), 150px);
   border-radius: 16px;
 }

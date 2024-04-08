@@ -7,3 +7,7 @@ export const INTRODUCTION = {
   AVALIABLE_TAG: "Avaliable",
   LOCATION_TAG: "📍 Seattle, WA",
 };
+
+export const EXPERIENCE = {
+  TITLE: "Work experience"
+}
