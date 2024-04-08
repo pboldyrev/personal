@@ -23,12 +23,11 @@ function Introduction() {
         <Button
           text={TEXTS.SECONDARY_CTA}
           type="secondary"
-          onClick={() => alert("Hello world")}
         />
         <Button
           text={TEXTS.PRIMARY_CTA}
           type="primary"
-          onClick={() => alert("Hello world")}
+          link="https://calendly.com/paulboldyrev"
         />
       </div>
     </div>

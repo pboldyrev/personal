@@ -7,6 +7,7 @@
   transition: 0.2s;
   border: 1px solid rgba(0, 0, 0, 0);
   min-width: fit-content;
+  text-decoration: none;
 }
 .app-btn:hover {
   transition: 0.2s;

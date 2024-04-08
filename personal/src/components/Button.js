@@ -1,10 +1,14 @@
 import "../styles/Button.css";
 
-function Button({ text, type = "primary", onClick }) {
+function Button({ text, type = "primary", onClick = () => {} }, link = "/") {
   return (
-    <button className={"app-btn app-btn-" + type} onClick={() => onClick()}>
+    <a
+      href={link}
+      className={"app-btn app-btn-" + type}
+      onClick={() => onClick()}
+    >
       {text}
-    </button>
+    </a>
   );
 }
 
