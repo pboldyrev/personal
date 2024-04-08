@@ -10,7 +10,7 @@ function Experience() {
       <Heading content={EXPERIENCE.TITLE} />
       <div className="d-flex flex-column gap-2 my-3">
         {POSITIONS.map((position) => (
-          <Position key={position.id} {...position} />
+          <Position key={position.company} {...position} />
         ))}
       </div>
     </div>
