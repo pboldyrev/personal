@@ -9,14 +9,16 @@ export const INTRODUCTION = {
 };
 
 export const EXPERIENCE = {
-  TITLE: "Work experience"
-}
+  TITLE: "Work experience",
+};
 
 export const SKILLS = {
   TITLE: "Skills",
   SEARCH_PLACEHOLDER: "Search skills...",
-}
+  EMPTY_LIST:
+    "I may not have that skill just yet, but I'm always hungry to learn!",
+};
 
 export const PROJECTS = {
   TITLE: "Projects",
-}
+};

@@ -1,11 +1,11 @@
 import "../styles/Skills.css";
 import Heading from "./Heading";
-import Tag from "./Tag.js";
 import Input from "./Input.js";
 import Banner from "./Banner.js";
 import { SKILLS } from "../constants/strings.ts";
 import { SKILL_LIST } from "../constants/data.ts";
 import { useEffect, useState } from "react";
+import TagList from "./TagList.js";
 
 function Skills() {
   const [searchedSkill, setSearchedSkill] = useState("");
@@ -47,24 +47,22 @@ function Skills() {
         placeholder={SKILLS.SEARCH_PLACEHOLDER}
         setValue={setSearchedSkill}
       />
-      {hasSkills
-        ? Object.keys(displaySkills).map((type) => (
-            <div key={type} className="row mt-4">
-              <div className="col-3">
-                <b>{type}</b>
-              </div>
-              <div className="col-9">
-                <div className="d-flex flex-wrap gap-1">
-                  {displaySkills[type].map((skill) => (
-                    <Tag key={skill.id} text={skill.title} />
-                  ))}
-                </div>
-              </div>
+      {hasSkills ? (
+        Object.entries(displaySkills).map(([type, skills]) => (
+          <div key={type} className="row mt-4">
+            <div className="col-3">
+              <b>{type}</b>
             </div>
-          ))
-        : <div className="mt-4">
-            <Banner type="danger" text="I may not have that skill just yet, but I'm always hungry to learn!" />
-          </div>}
+            <div className="col-9">
+              <TagList tags={skills.map((skill) => skill.title)}></TagList>
+            </div>
+          </div>
+        ))
+      ) : (
+        <div className="mt-4">
+          <Banner type="danger" text={SKILLS.EMPTY_LIST} />
+        </div>
+      )}
     </div>
   );
 }

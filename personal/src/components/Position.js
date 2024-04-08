@@ -3,6 +3,7 @@ import { useState } from "react";
 import BILL from "../resources/logos/BILL.jpg";
 import VIZIO from "../resources/logos/VIZIO.jpg";
 import Microsoft from "../resources/logos/Microsoft.jpg";
+import TagList from "./TagList";
 
 function Position({
   company = "",
@@ -52,7 +53,7 @@ function Position({
             </span>
           </div>
         </div>
-        <span className="position-button">{isOpened ? '-' : '+'}</span>
+        <span className="position-button">{isOpened ? "-" : "+"}</span>
       </div>
       {isOpened && (
         <div className="d-flex flex-column">
@@ -60,9 +61,10 @@ function Position({
             return (
               <div className="d-flex flex-column mt-4">
                 <span className="position-title">{position.title}</span>
-                <span>
+                <span className="mb-2">
                   {position.startDate} - {position.endDate}
                 </span>
+                <TagList tags={position.tags} />
               </div>
             );
           })}
