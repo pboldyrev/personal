@@ -27,7 +27,7 @@ function Introduction() {
         <Button
           text={TEXTS.PRIMARY_CTA}
           type="primary"
-          link="https://calendly.com/paulboldyrev"
+          link="https://calendly.com/paulboldyrev/30min"
         />
       </div>
     </div>

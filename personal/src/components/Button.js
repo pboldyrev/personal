@@ -1,6 +1,6 @@
 import "../styles/Button.css";
 
-function Button({ text, type = "primary", onClick = () => {} }, link = "/") {
+function Button({ text, link = "#", type = "primary", onClick = () => {} }) {
   return (
     <a
       href={link}
