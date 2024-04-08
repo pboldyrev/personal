@@ -3,6 +3,7 @@ import "../styles/App.css";
 import "../styles/shared.css";
 import Introduction from "./Introduction";
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="app-body my-3 my-sm-4 my-md-5 px-3 px-sm-4 px-md-5 col-11 col-sm-9 col-md-8 col-lg-7">
         <Introduction />
         <Experience />
+        <Skills />
       </div>
     </div>
   );

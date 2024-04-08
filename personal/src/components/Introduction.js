@@ -19,9 +19,9 @@ function Introduction() {
           </div>
         </div>
       </div>
-      <div className="d-flex gap-2 my-4 align-items-center">
+      <div className="d-flex gap-2 mt-4 align-items-center">
         <Line />
-        <Button text={TEXTS.SECONDARY_CTA} type="secondary" />
+        <Button text={TEXTS.SECONDARY_CTA} type="secondary" link="#work-experience" />
         <Button
           text={TEXTS.PRIMARY_CTA}
           type="primary"

@@ -1,0 +1,12 @@
+.input-field {
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  transition: 0.3s;
+}
+
+.input-field:focus,
+.input-field:hover {
+  outline: none;
+  border: 1px solid #0b8457;
+  scale: 1.01;
+}

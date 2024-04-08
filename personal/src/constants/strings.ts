@@ -11,3 +11,8 @@ export const INTRODUCTION = {
 export const EXPERIENCE = {
   TITLE: "Work experience"
 }
+
+export const SKILLS = {
+  TITLE: "Skills",
+  SEARCH_PLACEHOLDER: "Search skills...",
+}
