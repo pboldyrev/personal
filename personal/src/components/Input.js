@@ -6,7 +6,7 @@ function Input({ placeholder, setValue }) {
   const debounceValue = (val) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
-      setValue(val);
+      setValue(val.trim());
     }, 200);
   };
 
