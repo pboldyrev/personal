@@ -8,7 +8,7 @@ function Heading({ content, subtitle = "", size = "m", tagText = "" }) {
     <div className="d-flex flex-column">
       <div className="d-flex align-items-center gap-3">
         <span className={headingClasses}>{content}</span>
-        <Tag text={tagText} />
+        {tagText && <Tag text={tagText} />}
       </div>
       {subtitle && <span className={subheadingClasses}>{subtitle}</span>}
     </div>

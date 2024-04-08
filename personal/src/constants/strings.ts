@@ -4,5 +4,6 @@ export const INTRODUCTION = {
     "Fullstack engineer with an eye for user-centric and delightful design.",
   PRIMARY_CTA: "Schedule a chat",
   SECONDARY_CTA: "See my work",
-  TAG: "Avaliable",
+  AVALIABLE_TAG: "✅ Avaliable",
+  LOCATION_TAG: "📍 Seattle, WA",
 };
