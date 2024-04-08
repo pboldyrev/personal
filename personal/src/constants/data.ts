@@ -152,12 +152,12 @@ export const SKILL_LIST = [
   {
     id: 9,
     type: "Languages",
-    title: "JavaScript",
+    title: "JavaScript (JS)",
   },
   {
     id: 8,
     type: "Languages",
-    title: "TypeScript",
+    title: "TypeScript (TS)",
   },
   {
     id: 7,
