@@ -3,7 +3,7 @@ import "../styles/Input.css";
 function Input({ placeholder, setValue }) {
   let timeout;
 
-  const debounceValue = val => {
+  const debounceValue = (val) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       setValue(val);
