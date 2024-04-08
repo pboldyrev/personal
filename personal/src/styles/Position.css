@@ -3,6 +3,17 @@
   border-radius: 16px;
   border: 1px solid #aaa;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.position-wrapper:hover {
+  scale: 1.01;
+}
+
+.position-button {
+  font-weight: 600;
+  color: #aaa;
+  font-size: min(max(2vw, 20px), 32px);
 }
 
 .position-logo {

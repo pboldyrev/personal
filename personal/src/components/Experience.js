@@ -22,6 +22,35 @@ function Experience() {
         },
       ],
     },
+    {
+      company: "VIZIO",
+      startDate: "Jun 2021",
+      endDate: "Jun 2022",
+      positions: [
+        {
+          title: "Software Engineer (Contract)",
+          startDate: "Aug 2021",
+          endDate: "Jun 2022",
+        },
+        {
+          title: "Software Engineer Intern",
+          startDate: "Jun 2021",
+          endDate: "Aug 2021",
+        },
+      ],
+    },
+    {
+      company: "Microsoft",
+      startDate: "Jun 2019",
+      endDate: "Aug 2019",
+      positions: [
+        {
+          title: "Product Management Intern",
+          startDate: "Jun 2019",
+          endDate: "Aug 2019",
+        },
+      ],
+    },
   ];
   return (
     <>

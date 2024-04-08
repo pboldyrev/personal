@@ -1,6 +1,8 @@
 import "../styles/Position.css";
 import { useState } from "react";
 import BILL from "../resources/logos/BILL.jpg";
+import VIZIO from "../resources/logos/VIZIO.jpg";
+import Microsoft from "../resources/logos/Microsoft.jpg";
 
 function Position({
   company = "",
@@ -17,6 +19,12 @@ function Position({
       case "BILL":
         logo = BILL;
         break;
+      case "VIZIO":
+        logo = VIZIO;
+        break;
+      case "Microsoft":
+        logo = Microsoft;
+        break;
       default:
         logo = null;
     }
@@ -29,27 +37,32 @@ function Position({
   };
 
   return (
-    <div className="position-wrapper p-3" onClick={() => toggleView()}>
-      <div className="d-flex gap-4 align-items-center">
-        <img
-          src={getLogo()}
-          alt={`${company} logo`}
-          className="position-logo"
-        />
-        <div className="d-flex flex-column">
-          <span className="position-title">{company}</span>
-          <span>
-            {startDate} - {endDate}
-          </span>
+    <div className="position-wrapper p-4" onClick={() => toggleView()}>
+      <div className="d-flex gap-4 align-items-center justify-content-between">
+        <div className="d-flex align-items-center">
+          <img
+            src={getLogo()}
+            alt={`${company} logo`}
+            className="position-logo"
+          />
+          <div className="d-flex flex-column ms-3">
+            <span className="position-title">{company}</span>
+            <span>
+              {startDate} - {endDate}
+            </span>
+          </div>
         </div>
+        <span className="position-button">{isOpened ? '-' : '+'}</span>
       </div>
       {isOpened && (
-        <div className="d-flex flex-column mt-4">
+        <div className="d-flex flex-column">
           {positions.map((position) => {
             return (
-              <div className="d-flex flex-column mb-3">
+              <div className="d-flex flex-column mt-4">
                 <span className="position-title">{position.title}</span>
-                <span>{position.startDate} - {position.endDate}</span>
+                <span>
+                  {position.startDate} - {position.endDate}
+                </span>
               </div>
             );
           })}
