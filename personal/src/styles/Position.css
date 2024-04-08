@@ -1,6 +1,6 @@
 .position-wrapper {
   background-color: #fff;
-  border-radius: 250px;
+  border-radius: 16px;
   border: 1px solid #aaa;
   cursor: pointer;
 }
@@ -10,10 +10,12 @@
   min-height: 50px;
   width: min(max(20vw, 50px), 60px);
   height: min(max(20vw, 50px), 60px);
-  border-radius: 250px;
+  border-radius: 16px;
+  border: 1px solid #aaa;
 }
 
-.position-company {
+.position-title {
   font-weight: 600;
   line-height: 16px;
+  font-size: min(max(2vw, 16px), 18px);
 }

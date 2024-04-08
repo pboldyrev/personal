@@ -2,6 +2,7 @@ html,
 body {
   background-color: #fffaf4;
   overflow: hidden;
+  font-size: min(max(2vw, 14px), 16px);
 }
 
 * {

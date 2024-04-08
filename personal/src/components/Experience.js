@@ -6,16 +6,21 @@ import { EXPERIENCE } from "../constants/strings.ts";
 function Experience() {
   const positions = [
     {
-      title: "Frontend Engineer",
-      company: "BILL",
-      startDate: "Jul 2023",
-      endDate: "Current",
-    },
-    {
-      title: "Software Engineer Intern",
       company: "BILL",
       startDate: "Jun 2022",
-      endDate: "Sep 2022",
+      endDate: "Current",
+      positions: [
+        {
+          title: "Software Engineer",
+          startDate: "Jul 2023",
+          endDate: "Current",
+        },
+        {
+          title: "Software Engineer Intern",
+          startDate: "Jun 2022",
+          endDate: "Aug 2022",
+        },
+      ],
     },
   ];
   return (
