@@ -16,3 +16,7 @@ export const SKILLS = {
   TITLE: "Skills",
   SEARCH_PLACEHOLDER: "Search skills...",
 }
+
+export const PROJECTS = {
+  TITLE: "Projects",
+}
