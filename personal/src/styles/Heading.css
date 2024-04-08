@@ -1,0 +1,20 @@
+.app-heading,
+.app-subheading {
+  font-family: "Lora", serif;
+}
+
+.app-heading {
+  font-weight: 600;
+}
+
+.app-subheading {
+  font-weight: 300;
+}
+
+.app-heading-m {
+  font-size: min(max(2vw, 24px), 36px);
+}
+
+.app-subheading-m {
+  font-size: min(max(2vw, 18px), 24px);
+}

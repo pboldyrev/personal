@@ -1,0 +1,34 @@
+.app-btn {
+  background-color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 100px;
+  font-weight: 300;
+  transition: 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0);
+  min-width: fit-content;
+}
+.app-btn:hover {
+  transition: 0.2s;
+}
+
+.app-btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.app-btn-primary:hover {
+  background-color: #0b8457;
+  color: #fff;
+}
+
+.app-btn-secondary {
+  background: none;
+  border: 1px solid #aaa;
+  color: #000;
+}
+
+.app-btn-secondary:hover {
+  color: #0b8457;
+  border: 1px solid #0b8457;
+}
