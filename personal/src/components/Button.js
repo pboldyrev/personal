@@ -4,6 +4,8 @@ function Button({ text, link = "#", type = "primary", onClick = () => {} }) {
   return (
     <a
       href={link}
+      target={link !== "#" ? "_blank" : ""}
+      rel="noreferrer"
       className={"app-btn app-btn-" + type}
       onClick={() => onClick()}
     >
