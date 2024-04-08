@@ -27,7 +27,7 @@ function Skills() {
     if (!searchedSkill) updateDisplaySkills(SKILL_LIST);
     else {
       const filteredSkills = SKILL_LIST.filter((skill) =>
-        skill.title.includes(searchedSkill)
+        skill.title.toLowerCase().includes(searchedSkill.toLowerCase())
       );
 
       updateDisplaySkills(filteredSkills);
