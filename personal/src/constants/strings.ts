@@ -22,3 +22,7 @@ export const SKILLS = {
 export const PROJECTS = {
   TITLE: "Projects",
 };
+
+export const EDUCATION = {
+  TITLE: "Education",
+}

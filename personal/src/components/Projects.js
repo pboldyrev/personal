@@ -4,7 +4,7 @@ import { PROJECTS } from "../constants/strings.ts";
 
 function Projects() {
   return (
-    <div className="mt-5" id="work-experience">
+    <div className="mt-5">
       <Heading content={PROJECTS.TITLE} />
       Not done yet!
     </div>
