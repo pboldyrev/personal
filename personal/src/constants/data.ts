@@ -45,7 +45,7 @@ export const POSITIONS = [
         title: "Software Engineer (Contract)",
         startDate: "Aug 2021",
         endDate: "Jun 2022",
-        tags: ["C#", "Redis", ".NET", "AWS (EC2)", "ElastiSearch", "Postman"],
+        tags: ["C#", "Redis", ".NET", "AWS (EC2)", "ElasticSearch", "Postman"],
       },
       {
         title: "Software Engineer Intern",
@@ -117,7 +117,7 @@ export const SKILL_LIST = [
   },
   {
     type: "Technical",
-    title: "ElastiSearch",
+    title: "ElasticSearch",
   },
   {
     type: "Technical",
