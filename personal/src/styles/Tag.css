@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.tag:hover {
+  scale: 1.01;
+}
+
 .tag-primary {
   border: 1px solid #0b8457;
   color: #0b8457;
@@ -19,4 +23,3 @@
   color: #fc2f2f;
   background-color: #f8e8e8;
 }
-
