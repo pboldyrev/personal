@@ -74,6 +74,7 @@ export const SKILL_LIST = [
   {
     type: "Technical",
     title: "AngularJS",
+    yoe: 2,
   },
   {
     type: "Technical",

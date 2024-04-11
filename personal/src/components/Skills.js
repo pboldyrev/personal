@@ -6,6 +6,7 @@ import { SKILLS } from "../constants/strings.ts";
 import { SKILL_LIST } from "../constants/data.ts";
 import { useEffect, useState } from "react";
 import TagList from "./TagList.js";
+import Line from "./Line.js";
 
 function Skills() {
   const [searchedSkill, setSearchedSkill] = useState("");
@@ -40,7 +41,8 @@ function Skills() {
 
   return (
     <div className="mt-5">
-      <div className="mb-3">
+      <Line />
+      <div className="my-3">
         <Heading content={SKILLS.TITLE} />
       </div>
       <Input

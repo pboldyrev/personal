@@ -1,6 +1,6 @@
 import "../styles/Button.css";
 
-function Button({ text, link = "#", type = "primary", onClick = () => {} }) {
+function Button({ text, icon = "", link = "#", type = "primary", onClick = () => {} }) {
   return (
     <a
       href={link}
@@ -9,6 +9,7 @@ function Button({ text, link = "#", type = "primary", onClick = () => {} }) {
       className={"app-btn app-btn-" + type}
       onClick={() => onClick()}
     >
+      {icon && <i className={icon}></i>}
       {text}
     </a>
   );

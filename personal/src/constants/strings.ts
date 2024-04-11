@@ -25,4 +25,9 @@ export const PROJECTS = {
 
 export const EDUCATION = {
   TITLE: "Education",
-}
+  SCU_NAME: "Santa Clara University"
+};
+
+export const LINKEDIN = {
+  TITLE: "My LinkedIn",
+};

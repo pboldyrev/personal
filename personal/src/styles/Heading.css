@@ -18,3 +18,13 @@
 .app-subheading-m {
   font-size: min(max(2vw, 18px), 24px);
 }
+
+.app-heading-s {
+  font-weight: 300;
+  font-size: min(max(2vw, 20px), 24px);
+}
+
+.app-subheading-s {
+  font-size: min(max(2vw, 18px), 24px);
+}
+

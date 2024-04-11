@@ -18,3 +18,7 @@ body {
 b {
   font-weight: 700;
 }
+
+i {
+  font-size: min(max(2vw, 20px), 30px);
+}

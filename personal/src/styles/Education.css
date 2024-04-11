@@ -1,0 +1,12 @@
+.education-img {
+  border-radius: 25px;
+  min-width: 50px;
+  width: min(max(20vw, 50px), 100px);
+  aspect-ratio: 1/1;
+}
+
+.education-wrapper {
+  border-radius: 25px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
