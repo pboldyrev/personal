@@ -14,7 +14,7 @@ function Footer() {
         type="primary"
         icon="fa-solid fa-file-lines"
         text={"Resume"}
-        link="https://www.linkedin.com/in/paulboldyrev/overlay/1712003670048/single-media-viewer/?profileId=ACoAACgIKOgBO0hWfzxjPy8Mc77v737Wndm3Bwg"
+        link="/resume.pdf"
       />
     </div>
   );
