@@ -21,7 +21,7 @@ function Introduction() {
       </div>
       <div className="d-flex gap-2 mt-4 align-items-center">
         <Line />
-        <Button text={TEXTS.SECONDARY_CTA} type="secondary" link="#work-experience" />
+        <Button text={TEXTS.SECONDARY_CTA} type="secondary" link="/resume.pdf" />
         <Button
           text={TEXTS.PRIMARY_CTA}
           type="primary"

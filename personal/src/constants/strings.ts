@@ -3,7 +3,7 @@ export const INTRODUCTION = {
   SUBTITLE:
     "Fullstack engineer with an eye for user-centric and delightful design.",
   PRIMARY_CTA: "Schedule a chat",
-  SECONDARY_CTA: "See my work",
+  SECONDARY_CTA: "See my resume",
   AVALIABLE_TAG: "📍 San Jose, CA",
   LOCATION_TAG: "📍 Seattle, WA"
 };
