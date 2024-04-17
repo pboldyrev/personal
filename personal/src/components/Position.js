@@ -51,6 +51,9 @@ function Position({
             <span>
               {startDate} - {endDate}
             </span>
+            <span className="expand-link">
+              {!isOpened && "view more"}
+            </span>
           </div>
         </div>
         <span className="position-button">{isOpened ? "-" : "+"}</span>

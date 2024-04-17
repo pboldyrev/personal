@@ -30,3 +30,8 @@
   line-height: 16px;
   font-size: min(max(2vw, 16px), 18px);
 }
+
+.expand-link {
+  color: #aaa;
+  font-style: italic;
+}
