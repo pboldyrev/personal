@@ -7,6 +7,8 @@ import { SKILL_LIST } from "../constants/data.ts";
 import { useEffect, useState } from "react";
 import TagList from "./TagList.js";
 import Line from "./Line.js";
+import { Mixpanel } from "../services/mixpanel.js";
+import { MIXPANEL_EVENTS } from "../constants/constants.ts";
 
 function Skills() {
   const [searchedSkill, setSearchedSkill] = useState("");
@@ -30,7 +32,11 @@ function Skills() {
       const filteredSkills = SKILL_LIST.filter((skill) =>
         skill.title.toLowerCase().includes(searchedSkill.toLowerCase())
       );
-
+      Mixpanel.track(MIXPANEL_EVENTS.SEARCHED_SKILL, {
+        search: searchedSkill,
+        results: filteredSkills,
+        count: filteredSkills.length,
+      });
       updateDisplaySkills(filteredSkills);
     }
   }, [searchedSkill]);

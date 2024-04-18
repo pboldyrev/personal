@@ -23,7 +23,8 @@ function Introduction() {
         <Line />
         <Button text={TEXTS.SECONDARY_CTA} type="secondary" link="/resume.pdf" />
         <Button
-          text={TEXTS.PRIMARY_CTA}
+
+text={TEXTS.PRIMARY_CTA}
           type="primary"
           link="https://calendly.com/paulboldyrev/30min"
         />

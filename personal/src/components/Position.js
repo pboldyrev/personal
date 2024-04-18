@@ -4,6 +4,8 @@ import BILL from "../resources/logos/BILL.jpg";
 import VIZIO from "../resources/logos/VIZIO.jpg";
 import Microsoft from "../resources/logos/Microsoft.jpg";
 import TagList from "./TagList";
+import { Mixpanel } from "../services/mixpanel";
+import { MIXPANEL_EVENTS } from "../constants/constants.ts";
 
 function Position({
   company = "",
@@ -34,7 +36,14 @@ function Position({
   };
 
   const toggleView = () => {
-    setIsOpened((prev) => !prev);
+    setIsOpened((prev) => {
+      if (!prev) {
+        Mixpanel.track(MIXPANEL_EVENTS.EXPANDED_EXPERIENCE, {
+          company: company,
+        });
+      }
+      return !prev;
+    });
   };
 
   return (
@@ -51,9 +60,7 @@ function Position({
             <span>
               {startDate} - {endDate}
             </span>
-            <span className="expand-link">
-              {!isOpened && "view more"}
-            </span>
+            <span className="expand-link">{!isOpened && "view more"}</span>
           </div>
         </div>
         <span className="position-button">{isOpened ? "-" : "+"}</span>
@@ -62,7 +69,7 @@ function Position({
         <div className="d-flex flex-column">
           {positions.map((position) => {
             return (
-              <div className="d-flex flex-column mt-4">
+              <div key={position.title} className="d-flex flex-column mt-4">
                 <span className="position-title">{position.title}</span>
                 <span className="mb-2">
                   {position.startDate} - {position.endDate}
