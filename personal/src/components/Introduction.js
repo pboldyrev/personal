@@ -5,8 +5,14 @@ import Line from "./Line.js";
 import Tag from "./Tag.js";
 import profile from "../resources/profile.jpg";
 import { INTRODUCTION as TEXTS } from "../constants/strings.ts";
+import { Mixpanel } from "../services/mixpanel.js";
+import { MIXPANEL_EVENTS } from "../constants/constants.ts";
 
 function Introduction() {
+  const resumeClicked = () => {
+    Mixpanel.track(MIXPANEL_EVENTS.RESUME_CLICKED, { area: "header" });
+  };
+
   return (
     <div className="d-flex flex-column">
       <div className="d-flex gap-4 align-items-center">
@@ -21,12 +27,16 @@ function Introduction() {
       </div>
       <div className="d-flex gap-2 mt-4 align-items-center">
         <Line />
-        <Button text={TEXTS.SECONDARY_CTA} type="secondary" link="/resume.pdf" />
         <Button
-
-text={TEXTS.PRIMARY_CTA}
+          text={TEXTS.SECONDARY_CTA}
+          type="secondary"
+          link="/resume.pdf"
+        />
+        <Button
+          text={TEXTS.PRIMARY_CTA}
           type="primary"
           link="https://calendly.com/paulboldyrev/30min"
+          onClick={resumeClicked()}
         />
       </div>
     </div>
