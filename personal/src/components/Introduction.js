@@ -20,7 +20,6 @@ function Introduction() {
         <div className="d-flex flex-column gap-2">
           <Heading content={TEXTS.TITLE} subtitle={TEXTS.SUBTITLE} />
           <div className="d-flex gap-2">
-            <Tag type="primary" text={TEXTS.AVALIABLE_TAG} />
             <Tag type="primary" text={TEXTS.LOCATION_TAG} />
           </div>
         </div>
