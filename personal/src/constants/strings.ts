@@ -21,6 +21,13 @@ export const SKILLS = {
 
 export const PROJECTS = {
   TITLE: "Projects",
+  FINACLE: "Finacle",
+  FINACLE_SUBTITLE: "A platform with the privacy of a spreadsheet and the smarts of AI to track your net worth.",
+  FINACLE_LINK: "https://finacle.app",
+  FINACLE_CODE: "https://github.com/pboldyrev/iron",
+  FINACLE_SKILLS: ["AngularJS", "Python", "AWS Amplify", "Figma", "Mixpanel", "GraphQL", "REST APIs", "Open Source", "Custom LLM", "ChatGPT"],
+  PRIMARY_CTA: "View live",
+  SECONDARY_CTA: "See code",
 };
 
 export const EDUCATION = {

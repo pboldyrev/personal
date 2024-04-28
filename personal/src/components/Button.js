@@ -1,7 +1,13 @@
 import "../styles/Button.css";
 
-function Button({ text, icon = "", link = "#", type = "primary", onClick = () => {} }) {
-  return (
+function Button({
+  text,
+  icon = "",
+  link = "",
+  type = "primary",
+  onClick = () => {},
+}) {
+  return link ? (
     <a
       href={link}
       target={link.includes("#") ? "" : "_blank"}
@@ -12,6 +18,11 @@ function Button({ text, icon = "", link = "#", type = "primary", onClick = () =>
       {icon && <i className={icon}></i>}
       {text}
     </a>
+  ) : (
+    <button className={"app-btn app-btn-" + type} onClick={() => onClick()}>
+      {icon && <i className={icon}></i>}
+      {text}
+    </button>
   );
 }
 

@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Education from "./Education";
 import Footer from "./Footer";
+import Projects from "./Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Introduction />
         <Experience />
         <Skills />
+        <Projects />
         <Education />
         <Footer />
       </div>

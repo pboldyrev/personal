@@ -1,0 +1,10 @@
+.projects-img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.projects-wrapper {
+  border-radius: 25px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
