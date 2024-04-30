@@ -58,7 +58,7 @@ function Projects() {
             />
             <TagList tags={PROJECTS.FINACLE_SKILLS} />
           </div>
-          <div className="d-flex gap-2">
+          <div className="d-flex gap-2 flex-wrap">
             <Button text={PROJECTS.PRIMARY_CTA} link={PROJECTS.FINACLE_LINK} />
             <Button
               text={PROJECTS.SECONDARY_CTA}

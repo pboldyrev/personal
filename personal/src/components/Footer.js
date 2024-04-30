@@ -9,7 +9,7 @@ function Footer() {
   };
 
   return (
-    <div className="mt-5 mt-sm-4 mt-md-5 mb-5 d-flex flex-row gap-2 justify-content-center">
+    <div className="mt-5 mt-sm-4 mt-md-5 mb-5 d-flex flex-row flex-wrap gap-2 justify-content-center">
       <Button
         type="primary"
         icon="fa-brands fa-linkedin"
